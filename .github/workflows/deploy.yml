@@ -29,7 +29,6 @@ jobs:
         run: npm run build:deploy
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          folder: dist/news-summary-frontend
+        run: npm run deploy

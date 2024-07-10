@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:deploy": "ng build --base-href https://luisreinoso.github.io/news-summary-frontend/"
+    "build:deploy": "ng build --base-href https://luisreinoso.github.io/news-summary-frontend/",
+    "deploy": "ng deploy --base-href=/news-summary-frontend/ --repo=https://github.com/luisreinoso/news-summary-frontend.git"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +29,7 @@
     "@angular/cli": "^17.3.6",
     "@angular/compiler-cli": "^17.3.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
